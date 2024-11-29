@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayor y Menor de Números</title>
+    <script>
+        // Solicitar el ingreso de 5 números
+        var numeros = [];
+        for (var i = 0; i < 5; i++) {
+            var numero = parseFloat(prompt("Ingrese el número " + (i + 1) + ":"));
+            numeros.push(numero);
+        }
+
+        // Calcular el mayor y el menor
+        var mayor = Math.max(...numeros);
+        var menor = Math.min(...numeros);
+    </script>
+</head>
+<body>
+    <h2>Resultados</h2>
+    <ul id="resultado">
+        <li>El mayor número ingresado es: <span id="mayor"></span></li>
+        <li>El menor número ingresado es: <span id="menor"></span></li>
+    </ul>
+
+    <script>
+        // Mostrar el mayor y el menor en la lista
+        document.getElementById("mayor").innerText = mayor;
+        document.getElementById("menor").innerText = menor;
+    </script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="plugins.js/image-iframe-gallery-lightbox/NSB_Box.css" rel="stylesheet" />
+    <link rel="stylesheet" href="plugins.js/Versatile-Touch-Slider-Plugin-jQuery-EasySlides/jquery.easy_slides.css">
+    <link rel="stylesheet" href="css/estilos.css"/>
+    <link rel="stylesheet" href="plugins.js/whatsapp-click-to-chat/venom-button.min.css"/>
+    <link rel="stylesheet" href="plugins.js/OwlCarousel2/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="plugins.js/OwlCarousel2/dist/assets/owl.theme.default.min.css">
+    <title>Ejer 10</title>
+</head>
+<body>
+
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/image-1.jpg">
+<div class="owl-carousel">
+    <img src="https://placehold.co/300x200/png" width="300" alt="placeholder">
+    <img src="https://placehold.co/300x200/png" width="300" alt="placeholder">
+    <img src="https://placehold.co/300x200/png" width="300" alt="placeholder">
+    <img src="https://placehold.co/300x200/png" width="300" alt="placeholder">
+    <img src="https://placehold.co/300x200/png" width="300" alt="placeholder">
+    <img src="https://placehold.co/300x200/png" width="300" alt="placeholder">
+</div>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/image-2.jpg">
+
+<a class="nsbbox" title="Studio image" href="img/Studio1B.jpg">
+    <img class="center" src="img/Studio1B.jpg" width="400" alt="Studio" title="Studio" >
+</a>
+
+<div id="myButton"></div>
+</div>
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/image-3.jpg">
+
+    <div class="slider slider_clock">
+        <div>
+            <img src="img/viola.jpg" alt="Studio" title="Studio" >
+        </div>
+        <div>
+            <img src="img/guitarra.jpg" width="400" alt="Studio" title="Studio" >
+        </div>
+        <div>
+            <img src="img/piano.jpg" width="400" alt="Studio" title="Studio" >
+        </div>
+        <div class="next_button">NEXT</div>  
+        <div class="prev_button">PREV</div>  
+       </div>
+
+</div>
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="plugins.js/OwlCarousel2/dist/owl.carousel.min.js"></script>
+<script src="plugins.js/whatsapp-click-to-chat/venom-button.min.js"></script>
+<script src="plugins.js/parallax.js-master/parallax.js-master/parallax.js"></script>
+<script src="plugins.js/image-iframe-gallery-lightbox/NSB_Box.js"></script>
+<script src="plugins.js/Versatile-Touch-Slider-Plugin-jQuery-EasySlides/jquery.easy_slides.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            nav: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true
+        });
+        $('#myButton').venomButton({
+      size: '72px',
+      position: "right",  
+	  phone: 'teléfono',
+	  chatMessage: 'Ventana de chat',
+	  message: "Hola, ¿Cómo puedo ayudarte?",
+	  showPopup: true
+	});
+    $('.slider_clock').EasySlides({
+    'show': 15
+    })
+    });
+
+</script>
+
+</body>
+</html>

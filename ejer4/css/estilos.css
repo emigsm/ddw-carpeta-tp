@@ -1,0 +1,71 @@
+.ejer1 {
+    border-width: 20px;
+    padding: 15px;
+    background-color: deepskyblue;
+}
+
+.ejer2 {
+    background-image: url('../img/city64.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.ejer3 {
+    border-color: red;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.ejer4 p {
+    font-weight: bold;
+    border-width: 2px;
+    border-style: solid;
+    padding: 5px;
+}
+
+.ejer5 div {
+    background-color: yellow;
+    text-align: center;
+}
+
+.ejer6 {
+    border-color: blueviolet;
+    border-width: 5px;
+    border-style: double;
+    background-color: gold;
+    margin: 40px;
+}
+
+.ejer7 {
+    background-image: url('../img/city64.jpg');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+.ejer8 {
+    background-image: url('../img/city64.jpg');
+    background-size: 50%;
+}
+
+.ejer9 {
+    background-color: beige;
+    background-image: url('../img/cat300.jpg');
+    background-size: auto auto;
+    background-repeat: repeat-y;
+    background-position: right bottom;
+}
+
+.ejer9 .btn {
+   background-color: red;
+   margin-top: 5px;
+   margin-bottom: 5px; 
+}
+
+.ejer10 {
+    width: 50%;
+    border: 3px;
+    border-color: green;
+    border-style: dotted;
+    padding: 25px;
+}

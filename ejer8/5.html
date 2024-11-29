@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <script>
+        // Generar un número aleatorio entre 0 y 10
+        var numeroSecreto = Math.floor(Math.random() * 11);
+        var adivinado = false;
+
+        // Función para solicitar adivinanzas
+        function adivinarNumero() {
+            while (!adivinado) {
+                var intento = parseInt(prompt("Adivina el número entre 0 y 10:"));
+
+                if (intento === numeroSecreto) {
+                    alert("¡Correcto! Has adivinado el número: " + numeroSecreto);
+                    adivinado = true;
+                } else if (intento < numeroSecreto) {
+                    alert("Tu número ingresado es menor que el número a adivinar.");
+                } else if (intento > numeroSecreto) {
+                    alert("Tu número ingresado es mayor que el número a adivinar.");
+                }
+            }
+        }
+    </script>
+</head>
+<body onload="adivinarNumero()">
+    <h2>Adivina el Número</h2>
+    <p>¡Intenta adivinar el número que he generado!</p>
+</body>
+</html>

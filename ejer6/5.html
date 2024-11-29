@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejer5</title>
+    <style>
+        .container{
+        width: 300px;
+        height: 300px;
+        border: 1px solid black;
+        display: flex;
+        }
+        .caja{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+        @media (max-width: 768px){
+            
+            .container{
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="caja">1</div>
+        <div class="caja">2</div>
+    </div>
+</body>
+</html>

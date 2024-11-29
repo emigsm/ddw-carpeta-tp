@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perímetro y Área de un Rectángulo</title>
+    <script>
+        // Bloque para solicitar los lados del rectángulo
+        var base = parseFloat(prompt("Ingrese la base del rectángulo:"));
+        var altura = parseFloat(prompt("Ingrese la altura del rectángulo:"));
+        
+        // Cálculo del perímetro y el área
+        var perimetro = 2 * (base + altura);
+        var area = base * altura;
+    </script>
+</head>
+<body>
+    <p id="resultado-perimetro"></p>
+    <p id="resultado-area"></p>
+
+    <script>
+        // Bloque para mostrar los resultados
+        document.getElementById("resultado-perimetro").innerText = "El perímetro del rectángulo es: " + perimetro;
+        document.getElementById("resultado-area").innerText = "El área del rectángulo es: " + area;
+    </script>
+</body>
+</html>

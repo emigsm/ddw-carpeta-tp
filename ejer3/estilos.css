@@ -1,0 +1,72 @@
+body{
+    font-family: Calibri;
+}
+
+#escuela{
+    font-size: 36px;
+    line-height: 0.3;
+    color: rgb(26, 124, 180);
+}
+
+h2{
+    font-size: 30px;
+    line-height: 0.3;
+    color: rgb(26, 124, 180);
+}
+
+.item{
+    font-size: 20px;
+    line-height: 1;
+    color: rgb(230, 105, 3);
+}
+
+.rojo{
+    font-size: 18px;
+    color: rgb(242, 18, 18);
+}
+
+.rojo strong{
+    font-weight: normal;
+    color: rgb(157, 89, 89);
+}
+
+.verde{
+    font-size: 18px;
+    color: rgb(143, 210, 103);
+}
+
+.verde strong{
+    font-weight: normal;
+    color: rgb(97, 143, 75);
+}
+
+.rosa{
+    font-size: 18px;
+    color: rgb(220, 143, 143);
+}
+
+.rosa strong{
+    font-weight: normal;
+    color: rgb(126, 53, 53);
+}
+
+.lila{
+    font-size: 18px;
+    color: rgb(154, 143, 192);
+}
+
+.lila strong{
+    font-weight: normal;
+    color: rgb(92, 83, 120);
+}
+
+.magenta{
+    font-size: 18px;
+    color: rgb(252, 72, 228);
+}
+.magenta strong{
+    font-weight: normal;
+    color: rgb(207, 48, 178);
+}
+
+
